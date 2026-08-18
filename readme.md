@@ -21,18 +21,9 @@ Nesse exemplo, o botão muda de aparência quando o mouse passa por cima dele.
 Aplica estilo quando o cursor está sobre o elemento.
 
 ```css
-a:hover {
+.hover:hover {
   color: red;
   text-decoration: underline;
-}
-```
-
-### :active
-Aplica estilo quando o elemento está sendo pressionado.
-
-```css
-button:active {
-  transform: scale(0.98);
 }
 ```
 
@@ -40,9 +31,28 @@ button:active {
 Aplica estilo quando o elemento recebe foco, como um campo de input.
 
 ```css
-input:focus {
+focus:focus {
   border: 2px solid blue;
   outline: none;
+}
+```
+
+### :active
+Aplica estilo quando o elemento está sendo pressionado.
+
+```css
+.active:active {
+  color: orange;
+}
+```
+
+### :link
+Usada para links ainda não visitados.
+
+```css
+.link:link {
+  color: green;
+  text-decoration: none;
 }
 ```
 
@@ -50,26 +60,8 @@ input:focus {
 Usada para links já acessados.
 
 ```css
-a:visited {
+.visited:visited {
   color: purple;
-}
-```
-
-### :first-child
-Seleciona o primeiro elemento filho de um pai.
-
-```css
-li:first-child {
-  font-weight: bold;
-}
-```
-
-### :nth-child()
-Seleciona elementos com base em sua posição.
-
-```css
-li:nth-child(2n) {
-  background-color: #f2f2f2;
 }
 ```
 

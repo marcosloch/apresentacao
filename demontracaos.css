@@ -1,0 +1,26 @@
+div {
+    background-color: lightblue;
+}
+
+.hover:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+.focus:focus {
+    color: blue;
+    border: 2px solid blue;
+    outline: none;
+}
+
+.active:active {
+  color: purple;
+}
+
+.link:link {
+  color: red;
+}
+
+.visited:visited {
+  color: yellow;
+}
